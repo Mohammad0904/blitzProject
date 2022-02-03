@@ -44,7 +44,7 @@ Lab Section: 4
 
 
 
-<strong>Project Description:</strong>
+<em><strong>Project Description:</strong></em>
 
  The app has three levels of difficulty. It generates a random number based on the difficulty level and gives the user unlimited attempts to guess that number. If the user guesses the number correctly, a new number will be generated. There is a scoreboard displaying the high score of total numbers the user guesses correctly in a row. After failing to guess one consecutive number, the score will again start from zero. The user can end the game at any time and after ending the game the app displays the highest score.
 
