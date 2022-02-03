@@ -1,7 +1,7 @@
 # blitzProject
->Name of Team: Blitz
+## Name of Team: Blitz
 
-1) Mohammad Hossain; 
+> Mohammad Hossain; 
 
 York Email: sadman31@my.yorku.ca
 
@@ -10,7 +10,7 @@ Lecture Section: N
 Lab Section: 2
 
 
-2) Itteshaf Haque
+> Itteshaf Haque
 
 York Email: itteshaf@my.yorku.ca
 
@@ -19,7 +19,7 @@ Lecture Section: N
 Lab Section: 2
 
 
-3) Tae Hwan Lim
+> Tae Hwan Lim
 
 York Email: lim4961@my.yorku.ca
 
@@ -28,7 +28,7 @@ Lecture Section: N
 Lab Section: 1
 
 
-4) Arina Sohail
+> Arina Sohail
 
 York Email: arina1@my.yorku.ca
 
@@ -39,14 +39,14 @@ Lab Section: 4
 
 
 
-><em><strong>Project Title:</strong></em>
+## Project Title:
 
 What number am I thinking of? (Between 1-10)
 
 
 
 
-><em><strong>Project Description:</strong></em>
+## Project Description:
 
  The app has three levels of difficulty. It generates a random number based on the difficulty level and gives the user unlimited attempts to guess that number. If the user guesses the number correctly, a new number will be generated. There is a scoreboard displaying the high score of total numbers the user guesses correctly in a row. After failing to guess one consecutive number, the score will again start from zero. The user can end the game at any time and after ending the game the app displays the highest score.
 
@@ -54,7 +54,7 @@ What number am I thinking of? (Between 1-10)
 
 
 
-><em><strong>Functional Requirements:</strong></em>
+## Functional Requirements:
 
 •	There is a begin button on the first page.
 
