@@ -2,24 +2,40 @@
 Name of Team: Blitz
 
 1) Mohammad Hossain; 
+
 York Email: sadman31@my.yorku.ca
+
 Lecture Section: N
+
 Lab Section: 2
+
 
 2) Itteshaf Haque
+
 York Email: itteshaf@my.yorku.ca
+
 Lecture Section: N
+
 Lab Section: 2
 
+
 3) Tae Hwan Lim
+
 York Email: lim4961@my.yorku.ca
+
 Lecture Section: N
+
 Lab Section: 1
 
+
 4) Arina Sohail
+
 York Email: arina1@my.yorku.ca
+
 Lecture Section: N
+
 Lab Section: 4
+
 
 Project Title: What number am I thinking of? (Between 1-10)
 
