@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blitz">
         <activity
+            android:name=".easyGame"
+            android:exported="false" />
+        <activity
             android:name=".hardGame"
             android:exported="false" />
         <activity

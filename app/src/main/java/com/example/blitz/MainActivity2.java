@@ -42,9 +42,6 @@ public class MainActivity2 extends AppCompatActivity {
             }});
         }
 
-
-
-
     public void openactivity_medium_game() {
         Intent mediumIntent = new Intent(this, mediumGame.class);
         startActivity(mediumIntent);
