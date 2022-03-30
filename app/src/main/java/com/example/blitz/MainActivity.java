@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         beginButton = (Button) findViewById(R.id.beginButton);
         beginButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
+            public void onClick(View j) {
                         openactivity_main2();
 
         }});
