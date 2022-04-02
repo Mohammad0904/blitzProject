@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
         mediumButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openactivity_medium_game();
+                openActivity_medium_game();
 
             }});
 
@@ -29,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
         hardButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openactivity_hard_game();
+                openActivity_hard_game();
 
             }});
 
@@ -37,22 +37,22 @@ public class MainActivity2 extends AppCompatActivity {
         easyButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openactivity_easy_game();
+                openActivity_easy_game();
 
             }});
         }
 
-    public void openactivity_medium_game() {
+    public void openActivity_medium_game() {
         Intent mediumIntent = new Intent(this, mediumGame.class);
         startActivity(mediumIntent);
     }
 
-    public void openactivity_hard_game() {
+    public void openActivity_hard_game() {
         Intent hardIntent = new Intent(this, hardGame.class);
         startActivity(hardIntent);
     }
 
-    public void openactivity_easy_game() {
+    public void openActivity_easy_game() {
         Intent easyIntent = new Intent(this, easyGame.class);
         startActivity(easyIntent);
     }
