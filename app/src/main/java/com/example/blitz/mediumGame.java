@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.Random;
+
 public class mediumGame extends AppCompatActivity {
     public int answer;
 
