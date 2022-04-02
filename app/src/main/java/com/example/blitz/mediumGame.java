@@ -1,13 +1,11 @@
 package com.example.blitz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.Random;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class mediumGame extends AppCompatActivity {
     double medScore = 0.0;
@@ -17,14 +15,6 @@ public class mediumGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_game);
-
-        /**button.setOnClickListener(new View.OnClickListener(){
-            @Override
-                public void onClick(View j) {
-                matchAnswer();
-                }
-        }
-        */
 
     }
 
