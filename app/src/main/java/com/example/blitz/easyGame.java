@@ -10,7 +10,6 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class easyGame extends AppCompatActivity {
-    int answer;
     double easeScore = 0.0;
 
     @Override
@@ -19,10 +18,6 @@ public class easyGame extends AppCompatActivity {
         setContentView(R.layout.activity_easy_game);
     }
 
-    /** public void generateRandomNumber() {
-        Random easyRandom = new Random();
-        this.answer = easyRandom.nextInt(10) + 1;
-    } **/
 
     public void easyButtonClicked(View v) {
         EditText easyGuess = (EditText) findViewById(R.id.easyGuess);
@@ -30,7 +25,7 @@ public class easyGame extends AppCompatActivity {
 
         Double eD = Compare.parseDouble(eS);
         int eI = Compare.convertToInt(eD);
-        int eR = Compare.generateRandomNumber();
+        int eR = Compare.generateEasyRandomNumber();
         boolean easyCom = Compare.comparison(eI, eR);
 
         if (easyCom == true) {
@@ -39,6 +34,7 @@ public class easyGame extends AppCompatActivity {
             ((TextView) findViewById(R.id.easyScore)).setText(display);
         }
         else {
+            easeScore = 0.0;
             String display = Compare.format(easeScore);
             ((TextView) findViewById(R.id.easyScore)).setText(display);
         }

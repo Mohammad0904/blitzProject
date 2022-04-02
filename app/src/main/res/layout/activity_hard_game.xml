@@ -10,6 +10,7 @@
         android:id="@+id/easyEnter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="hardButtonClicked"
         android:text="Enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
