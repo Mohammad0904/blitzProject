@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class hardGame extends AppCompatActivity {
     double harScore = 0.0;
     private Button hardLeaderboardButton;
+    Leaderboard hardLeaderboard = new Leaderboard();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class hardGame extends AppCompatActivity {
             harScore++;
             String display = Compare.format(harScore);
             ((TextView) findViewById(R.id.hardScore)).setText(hardNameString + "'s score: " + display);
+            hardLeaderboard.addToLeaderboard((int) harScore, hardNameString);
         }
         else {
             harScore = 0.0;
@@ -53,5 +55,6 @@ public class hardGame extends AppCompatActivity {
     public void openActivity_hard_Leaderboard() {
         Intent hardLeadIntent = new Intent(this, hardLeaderboard.class);
         startActivity(hardLeadIntent);
+        ((TextView) findViewById(R.id.hard_Leaderboard)).setText(hardLeaderboard.getLeaderboard());
     }
 }

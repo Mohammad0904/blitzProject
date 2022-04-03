@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class easyGame extends AppCompatActivity {
     double easeScore = 0.0;
     private Button easyLeaderboardButton;
+    Leaderboard easyLeaderboard = new Leaderboard();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class easyGame extends AppCompatActivity {
             easeScore++;
             String display = Compare.format(easeScore);
             ((TextView) findViewById(R.id.easyScore)).setText(easyNameString + "'s score: " + display);
+            easyLeaderboard.addToLeaderboard((int) easeScore, easyNameString);
         }
         else {
             easeScore = 0.0;
@@ -54,5 +56,6 @@ public class easyGame extends AppCompatActivity {
     public void openActivity_easy_Leaderboard() {
         Intent easLeadIntent = new Intent(this, easyLeaderboard.class);
         startActivity(easLeadIntent);
+        ((TextView) findViewById(R.id.easy_Leaderboard)).setText(easyLeaderboard.getLeaderboard());
     }
 }

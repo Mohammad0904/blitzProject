@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class mediumGame extends AppCompatActivity {
     double medScore = 0.0;
     private Button mediumLeaderboardButton;
+    Leaderboard mediumLeaderboard = new Leaderboard();
 
 
     @Override
@@ -44,6 +45,7 @@ public class mediumGame extends AppCompatActivity {
             medScore++;
             String display = Compare.format(medScore);
             ((TextView) findViewById(R.id.mediumScore)).setText(mediumNameString + "'s score: " + display);
+            mediumLeaderboard.addToLeaderboard((int) medScore, mediumNameString);
         }
         else {
             medScore = 0.0;
@@ -55,6 +57,7 @@ public class mediumGame extends AppCompatActivity {
     public void openActivity_medium_Leaderboard() {
         Intent medLeadIntent = new Intent (this, mediumLeaderboard.class);
         startActivity(medLeadIntent);
+        ((TextView) findViewById(R.id.medium_Leaderboard)).setText(mediumLeaderboard.getLeaderboard());
     }
 
 }
